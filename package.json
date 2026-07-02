@@ -9,8 +9,5 @@
     "start": "node dist/index.js",
     "build": "tsc"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "preinstall": "*"
-  }
+  "dependencies": {}
 }
