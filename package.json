@@ -1,13 +1,11 @@
 {
   "name": "node-microsvcs",
   "version": "1.0.0",
-  "engines": {
-    "node": ">=16.0.0"
+  "dependencies": {
+    "sqlite3": "latest"
   },
   "scripts": {
-    "test": "jest",
-    "start": "node dist/index.js",
-    "build": "tsc"
-  },
-  "dependencies": {}
+    "build": "npm run build:native",
+    "test": "jest"
+  }
 }
