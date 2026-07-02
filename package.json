@@ -1,15 +1,21 @@
 {
   "name": "dm-customer-12",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "preinstall": "sudo apt-get update && sudo apt-get install -y build-essential",
-    "start": "node index.js",
-    "test": "jest"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-query": "latest",
+    "node-microsvcs": "1.0.0"
   },
   "devDependencies": {
-    "jest": "^29.5.0"
+    "next": "latest",
+    "typescript": "^4.5.2"
   }
 }
