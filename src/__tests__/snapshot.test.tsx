@@ -1,7 +1,13 @@
+import React from 'react';
 import { render } from '@testing-library/react';
-import { Dashboard } from '../Dashboard';
+import Dashboard from '../Dashboard';
 
-test('Dashboard renders correctly', () => {
-  const { asFragment } = render(<Dashboard />);
-  expect(asFragment()).toMatchSnapshot(); // fails when date changes
+// Mock the current date to ensure deterministic snapshots
+jest.spyOn(Date, 'now').mockReturnValue(new Date('2024-01-14').getTime());
+
+describe('Dashboard', () => {
+  it('renders correctly', () => {
+    const { asFragment } = render(<Dashboard />);
+    expect(asFragment()).toMatchSnapshot();
+  });
 });
