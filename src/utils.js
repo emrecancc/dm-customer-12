@@ -1,5 +1,5 @@
-export function processUser(data) {
-  const { name, email, ...rest } = data ?? {};
-  const { address: { street, city } } = rest
-  return { name, email, street, city };
-}
+export const transform = (x) => ({
+  id: x.id,
+  name: x.name,
+  email: x.email,
+});
