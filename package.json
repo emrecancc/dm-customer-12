@@ -2,7 +2,7 @@
   "name": "node-microsvcs",
   "version": "1.0.0",
   "dependencies": {
-    "sqlite3": "latest"
+    "node-gyp": "latest"
   },
   "scripts": {
     "build": "npm run build:native",
