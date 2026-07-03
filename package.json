@@ -1,11 +1,12 @@
 {
-  "name": "dm-customer-12",
+  "name": "node-microsvcs",
   "version": "1.0.0",
   "dependencies": {
-    "node-fetch": "^3.0.0"
+    "react": "^18.0.0"
   },
   "scripts": {
     "test": "echo ok",
-    "build": "echo ok"
+    "build": "echo ok",
+    "start": "node index.js"
   }
 }
