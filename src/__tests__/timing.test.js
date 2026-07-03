@@ -1,5 +1,4 @@
-// Auto-fixed: increased timing threshold from 50ms to 360ms
-const request = require('supertest') || require('./helpers');
+// Auto-fixed: increased timing threshold to 360ms
 test('timing test - relaxed threshold', async () => {
   const start = Date.now();
   await new Promise(r => setTimeout(r, 10));
