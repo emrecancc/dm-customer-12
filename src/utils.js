@@ -1,5 +1,7 @@
-export const transform = (x) => ({
-  id: x.id,
-  name: x.name,
-  email: x.email,
-});
+function processUser(user = {}) {
+  const { street } = user;
+  // Example logic: return street or default
+  return street || '';
+}
+
+module.exports = { processUser };
