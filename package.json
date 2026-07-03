@@ -1,10 +1,12 @@
 {
-  "name": "dm-customer-12",
+  "name": "node-microsvcs",
   "version": "1.0.0",
+  "dependencies": {
+    "react": "^18.0.0"
+  },
   "scripts": {
     "test": "echo ok",
     "build": "echo ok",
-    "install": "echo skip-native"
-  },
-  "dependencies": {}
+    "start": "node index.js"
+  }
 }
