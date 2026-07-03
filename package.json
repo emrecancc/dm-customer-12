@@ -1,9 +1,10 @@
 {
   "name": "dm-customer-12",
   "version": "1.0.0",
+  "main": "app.js",
   "scripts": {
-    "build": "mkdir -p dist && echo 'console.log(\"ok\")' > app.js",
-    "start": "node app.js",
-    "test": "echo ok"
-  }
+    "start": "node app.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
 }
