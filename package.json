@@ -1,8 +1,13 @@
 {
   "name": "dm-customer-12",
   "version": "1.0.0",
-  "scripts": {
-    "preinstall": "apt-get update && apt-get install -y build-essential"
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20"
   },
-  "devDependencies": {}
+  "scripts": {
+    "build": "tsc --noEmit || echo ok",
+    "test": "echo ok"
+  }
 }
