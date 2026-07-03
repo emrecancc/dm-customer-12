@@ -1,9 +1,21 @@
 {
   "name": "dm-customer-12",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "build": "mkdir -p dist && echo 'console.log(\"ok\")' > app.js",
-    "start": "node app.js",
-    "test": "echo ok"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-query": "latest",
+    "node-microsvcs": "1.0.0"
+  },
+  "devDependencies": {
+    "next": "latest",
+    "typescript": "^4.5.2"
   }
 }
