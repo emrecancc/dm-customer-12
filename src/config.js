@@ -1,5 +1,7 @@
-module.exports = {
-  host: 'localhost',
+const config = {
+  port: 3000,
+  host: 'localhost'
   debug: true,
-  port: 3000
+  timeout: 5000
 };
+module.exports = config;
